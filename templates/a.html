@@ -1,0 +1,184 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Netflix Dashboard</title>
+  
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .header {
+      background-color: #000 !important;
+      border-bottom: 2px solid #e50914;
+    }
+
+    .sitename {
+      color: #e50914 !important;
+      font-weight: bold;
+    }
+
+    .navbar a {
+      color: #fff !important;
+    }
+
+    .navbar a:hover {
+      color: #e50914 !important;
+    }
+
+    .btn-getstarted {
+      background-color: #e50914 !important;
+      border-radius: 20px;
+      padding: 8px 18px;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .btn-getstarted:hover {
+      background-color: #b20710 !important;
+    }
+
+    /* Hero Section */
+    .page-title {
+      background: #000;
+      height: 300px; /* Adjust height */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .page-title h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      color: #e50914;
+    }
+
+    .container h1 {
+      color: #e50914;
+      margin-top: 20px;
+    }
+
+    p {
+      color: #ddd;
+    }
+
+    .carousel-item img {
+      height: 600px;
+      object-fit: cover;
+    }
+
+    footer {
+      background-color: #000;
+      color: #aaa;
+      padding: 20px 0;
+      text-align: center;
+      border-top: 2px solid #e50914;
+    }
+  </style>
+</head>
+
+<body class="about-page">
+
+  
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">NETFLIX</h1>
+      </a>
+
+      {% include "common/menu.html" %}
+      <a class="btn-getstarted" href="courses.html">Get Started</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="page-title" data-aos="text-white">
+    <h1>Home</h1>
+  </section>
+
+  <!-- Content -->
+  <div class="container">
+    <h1>Home</h1>
+    <p>
+      Step into the world of Netflix like never before with our interactive dashboard. From blockbuster hits to 
+      fan-favorite series, this platform lets you browse, analyze, and discover the content that defines entertainment. 
+      Track top trends, explore categories, and uncover insights behind the shows and movies everyone’s talking about. 
+      Your Netflix journey starts here.
+    </p>
+  </div>
+
+  <!-- Bootstrap Carousel -->
+  <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="3"></button>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+           <div class="col-md-12">
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://miro.medium.com/v2/resize:fit:1400/1*BANNNIgKCW2HhiYfhvUNig.jpeg" class="d-block w-100" alt="Netflix Banner">
+      </div>
+      <div class="carousel-item">
+        <img src="https://res.klook.com/image/upload/q_85/c_fill,w_750/v1596003247/blog/zrlaswvgibhoadoaqdgb.jpg" class="d-block w-100" alt="Netflix Shows">
+      </div>
+      <div class="carousel-item">
+        <img src="https://media.vpnpro.com/Ghibli-movies-on-Netflix.jpeg" class="d-block w-100" alt="Netflix Anime">
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.neowin.com/news/images/uploaded/2024/06/1717732935_netflix_english_tv_ui_story.jpg" class="d-block w-100" alt="Netflix UI">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  {% include "common/footer.html" %}
+
+  <!-- Vendor JS -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/js/main.js' %}"></script>
+</body>
+</html>

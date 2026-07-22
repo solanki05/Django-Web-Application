@@ -1,0 +1,205 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>About - Netflix Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+    <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .header {
+      background-color: #000 !important;
+      border-bottom: 2px solid #e50914;
+    }
+
+    .sitename {
+      color: #e50914 !important;
+      font-weight: bold;
+    }
+
+    .navbar a {
+      color: #fff !important;
+    }
+
+    .navbar a:hover {
+      color: #e50914 !important;
+    }
+
+    .btn-getstarted {
+      background-color: #e50914 !important;
+      border-radius: 20px;
+      padding: 8px 18px;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .btn-getstarted:hover {
+      background-color: #b20710 !important;
+    }
+
+    /* Hero Section */
+    .page-title {
+      background: #000;
+      height: 300px; /* Adjust height */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .page-title h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      color: #e50914;
+    }
+
+    .container h1 {
+      color: #e50914;
+      margin-top: 20px;
+    }
+
+    p {
+      color: #ddd;
+    }
+
+    .carousel-item img {
+      height: 500px;
+      object-fit: cover;
+    }
+
+    footer {
+      background-color: #000;
+      color: #aaa;
+      padding: 20px 0;
+      text-align: center;
+      border-top: 2px solid #e50914;
+    }
+  </style>
+</head>
+
+  <!-- =======================================================
+  * Template Name: Mentor
+  * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="about-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Netflix</h1>
+      </a>
+
+    {% include "common/menu.html" %}
+
+      <a class="btn-getstarted" href="courses.html">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>Contact Us<br></h1>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div><!-- End Page Title -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Contact Us</h1>
+
+           <div class="col-md-12">
+      
+      <p class="text-white">Have questions about our Netflix Dashboard Project? We’d love to hear from you!
+
+This project was created as part of an academic initiative to analyze and visualize Netflix data using Python, Django, and Power BI. While it’s not an official Netflix product, our goal is to provide insights into Netflix’s content trends, genres, and popularity metrics.
+
+📩 Email: netflix@gmail.com
+📞 Phone: +14085403700
+📍 Address: 724P+RC Los Gatos, California, USA
+
+Whether you have feedback, collaboration ideas, or just want to learn more about how this project works, feel free to reach out!</p>
+    </div>
+  </div>
+</div>
+          <div class="col-lg-12">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26014572.62216824!2d-160.98742080000002!3d37.2570306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808e35a0d3457091%3A0xdebdf28350f4befc!2sNetflix%20-%20Building%20E%20-%20Main%20Lobby!5e0!3m2!1sen!2sin!4v1756216412365!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+
+
+
+
+  </main>
+
+{% include "common/footer.html" %}
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
